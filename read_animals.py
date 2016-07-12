@@ -1,5 +1,6 @@
 f = open('animals.txt', 'r')
-text = True
-while text:
+while True:
   text = f.readline()
+  if text == '':
+  	break
   print(text.strip())
